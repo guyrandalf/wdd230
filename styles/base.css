@@ -15,17 +15,17 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 40px;
+	gap: 20px;
 }
 header img {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	padding: 40px;
 	border-radius: 20px;
 }
 header h1 {
 	font-weight: 500;
-	font-size: 50px;
+	font-size: 40px;
 }
 nav {
 	background-color: #1a1a1a;
@@ -38,10 +38,49 @@ nav ul li {
 	list-style-type: none;
 	font-size: 20px;
 	font-weight: 500px;
-	padding: 15px;
+	padding: 10px;
 	text-align: center;
 }
 nav ul li a {
 	color: #ffffff;
 	text-decoration: none;
+}
+
+main {
+	width: calc(100% - 100px);
+	margin: auto;
+	padding: 20px;
+}
+
+main h2 {
+	text-align: center;
+	border-bottom: solid 2px #778899;
+}
+
+.card {
+	display: grid;
+	border: 1px solid #778899;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.card h3 {
+	text-align: center;
+	background-color: #778899;
+	color: #ffffff;
+	padding: 10px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	margin-top: 0;
+}
+
+.card ul {
+	list-style: none;
+}
+
+footer {
+	/* margin-top: -16px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
