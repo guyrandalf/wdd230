@@ -10,9 +10,6 @@ body {
 header {
 	background-color: #551a8b;
 	color: #ffffff;
-}
-
-header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
