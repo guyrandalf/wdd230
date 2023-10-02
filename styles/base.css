@@ -141,8 +141,10 @@ main h2 {
 	margin-bottom: 10px;
 }
 
-.map {
+.map iframe {
 	height: 400px;
+	width: 1230px;
+	border: 0;
 }
 
 .card h3 {
