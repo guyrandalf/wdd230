@@ -1,5 +1,6 @@
 @media screen and (min-width: 520px) {
     nav ul {
+        display: flex;
         flex-direction: row;
     }
 
@@ -13,5 +14,9 @@
 
     main h2 {
         font-size: 30px;
+    }
+
+    .menu {
+        display: none;
     }
 }
