@@ -8,12 +8,20 @@
         font-size: 16px;
     }
 
+    main h2 {
+        font-size: 30px;
+    }
+
     .card {
         grid-column: span 1;
     }
 
-    main h2 {
-        font-size: 30px;
+    .card ul li {
+        font-size: 16px;
+    }
+
+    .card.map {
+        grid-column: span 2;
     }
 
     .menu {

@@ -20,7 +20,7 @@ header img {
 	width: 150px;
 	height: 150px;
 	padding: 40px;
-	border-radius: 20px;
+	border-radius: 50%;
 }
 
 header h1 {
@@ -136,9 +136,13 @@ main h2 {
 
 .card {
 	grid-column: span 3;
-	border: 1px solid #0c0c0c;
+	box-shadow: 1px 1px 2px 1px #ccc;
 	border-radius: 5px;
 	margin-bottom: 10px;
+}
+
+.map {
+	height: 400px;
 }
 
 .card h3 {
@@ -153,6 +157,10 @@ main h2 {
 
 .card ul {
 	list-style: none;
+}
+
+.card ul li {
+	font-size: 12px;
 }
 
 footer {
