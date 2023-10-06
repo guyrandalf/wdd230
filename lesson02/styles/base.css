@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #551a8b;
+    padding: 10px;
+    text-align: center;
+}
+
+header a {
+    color: #bfdbf7;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header h1,
+header h2 {
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+}
+
+section {
+    margin: 10px 15px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #ccc;
+    height: auto;
+    overflow: auto;
+}
+
+section h3 {
+    background-color: #551a8b;
+    opacity: .8;
+    color: #ffffff;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+section h3,
+section p,
+section a,
+section img {
+    padding: 10px;
+}
+
+section p,
+section a {
+    padding: 0 10px;
+    font-size: 22px;
+}
+
+section img {
+    height: 400px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #551a8b;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
