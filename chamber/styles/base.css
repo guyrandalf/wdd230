@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
 :root {
     --bg-color: #DC143C;
     --mt: 40px;
     --mb: 20px;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 html {
     font-family: "Ubuntu", sans-serif;
@@ -127,7 +127,7 @@ main {
     background-color: #AB031C;
 }
 
-.bottom nav ul div {
+.bottom nav ul li:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +138,7 @@ main {
     text-align: center;
 }
 
-.bottom nav div a {
+.bottom nav ul li:last-child a {
     width: 100%;
     text-align: center;
     text-decoration: none;
@@ -146,8 +146,8 @@ main {
     color: #44097a;
 }
 
-.bottom nav div:hover,
-.bottom nav div a:hover {
+.bottom nav ul li:last-child:hover,
+.bottom nav ul li:last-child a:hover {
     background-color: #AB031C;
     color: #fff;
 }
