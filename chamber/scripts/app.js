@@ -17,4 +17,4 @@ menuToggle.onclick = () => {
 let currentdate = document.lastModified;
 document.getElementById(
     "lastModified"
-).textContent = `Last Updated ${currentdate}`;
+).textContent = `Last Updated: ${currentdate}`;
