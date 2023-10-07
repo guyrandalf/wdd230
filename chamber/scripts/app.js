@@ -1,23 +1,20 @@
-"use strict";
+let menuToggle = document.getElementById('hamburger')
+let menuToggleSpan = document.querySelector('span')
+let nav = document.querySelector('.bottom')
 
-document.querySelector('#now').innerHTML = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format();
-//document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
-
-let banner = document.querySelector('#banner');
-let dayOfWeek = new Date().getDay();
-// if Monday or Tuesday displays this
-if (dayOfWeek == 1 || dayOfWeek == 2) {
-    banner.style.display = "block";
-}
-//Let's get the hamburguer working!
-
-function toggleMenu() {
-
-    document.getElementById('Nav').classList.toggle('open');
+menuToggle.onclick = () => {
+    if (nav.style.display === 'none' || nav.style.display === '') {
+        nav.style.display = 'block'
+        menuToggleSpan.classList.remove('menu-button')
+        menuToggleSpan.classList.add('closing')
+    } else {
+        nav.style.display = 'none'
+        menuToggleSpan.classList.remove('closing')
+        menuToggleSpan.classList.add('menu-button')
+    }
 }
 
-let navig = document.getElementById('hamburgerBtn')
-navig.onclick = toggleMenu
-
-document.getElementById("modify").innerHTML = document.lastModified
-document.getElementById("year").innerHTML = new Date().getFullYear()
+let currentdate = document.lastModified;
+document.getElementById(
+    "lastModified"
+).textContent = `Last Updated ${currentdate}`;

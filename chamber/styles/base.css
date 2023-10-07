@@ -1,5 +1,7 @@
 :root {
-    --bg-color: #551A8B;
+    --bg-color: #DC143C;
+    --mt: 40px;
+    --mb: 20px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
@@ -11,10 +13,382 @@ html {
     box-sizing: border-box;
 }
 
-header {
+body {
+    color: #222;
+}
+
+h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--bg-color);
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+/* Header Starts */
+
+.top {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
     background-color: var(--bg-color);
     color: #ffffff;
     align-items: center;
+    border-bottom: 1px solid #ccc;
 }
+
+.top nav {
+    display: none;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.brand span:nth-child(2) {
+    font-size: 16px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.hamburger span,
+.hamburger span::before,
+.hamburger span::after {
+    margin-top: 4px;
+    font-weight: bold;
+    height: 2px;
+    width: 20px;
+    background-color: #fff;
+}
+
+.hamburger span:first-child {
+    margin-top: 0;
+}
+
+.bottom {
+    position: relative;
+    display: none;
+    background-color: var(--bg-color);
+    color: #ffffff;
+    z-index: 999;
+}
+
+.bottom nav {
+    display: flex;
+    align-items: center;
+}
+
+.bottom nav ul {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bottom nav ul li {
+    display: flex;
+    /* background-color: #AB031C; */
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    list-style: none;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+.bottom nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+}
+
+.bottom nav ul li:hover {
+    background-color: #AB031C;
+}
+
+.bottom nav ul div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.bottom nav div a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #44097a;
+}
+
+.bottom nav div:hover,
+.bottom nav div a:hover {
+    background-color: #AB031C;
+    color: #fff;
+}
+
+
+
+/* Header Ends */
+
+/* Hero Starts */
+
+.hero {
+    height: 250px;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+}
+
+.cta1 {
+    background-color: #fff;
+    opacity: .8;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    border-radius: 2px;
+    top: 140px;
+    right: 50px;
+}
+
+.cta1 p {
+    font-size: 12px;
+}
+
+.cta1 a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #DC143C;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 10px;
+}
+
+/* Hero Ends */
+
+/* Mission section Starts */
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--mt);
+    padding: 0 40px;
+}
+
+.mission p {
+    font-size: 14px;
+}
+
+/* Mission section Ends */
+
+/* Event section starts */
+
+.event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--mt);
+    padding: 0 40px;
+}
+
+.event-list {
+    margin-top: var(--mt);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.event-list img {
+    width: 100%;
+}
+
+.event-list .card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0px -.5px 1px 1.5px #ddd;
+}
+
+.event p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.event a {
+    background-color: var(--bg-color);
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 3px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Event section ends */
+
+/* Call to action in main starts */
+.cta2 {
+    margin-top: var(--mt);
+    margin-bottom: var(--mb);
+    background-color: var(--bg-color);
+    padding: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.cta2 a {
+    background-color: #fff;
+    color: var(--bg-color);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+/* Call to action in main ends */
+
+/* Sponsors section starts */
+.sponsor {
+    margin-top: var(--mt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 var(--mb);
+}
+
+.sponsor-list {
+    margin-top: var(--mt);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.sponsor-list img {
+    width: 100%;
+}
+
+/* Sponsors section ends */
+
+/* Spotlight section starts */
+
+.spotlight {
+    display: flex;
+    margin-top: var(--mt);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--mb);
+}
+
+.spotlight-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: var(--mt);
+    gap: 20px;
+    width: 300px;
+}
+
+.spotlight-list .card {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0px -.5px 1px 1.5px #eee;
+}
+
+.spotlight-list img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+/* Spotlight section ends */
+
+/* Weather API starts */
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather .card {
+    display: flex;
+    gap: 20px;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0px -.5px 1px 1.5px #eee;
+}
+
+/* Weather API ends */
+
+/* Footer section starts */
+
+footer {
+    position: relative;
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    bottom: 0;
+    top: 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* Footer section ends */

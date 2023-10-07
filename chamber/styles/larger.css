@@ -1,0 +1,185 @@
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    main {
+        margin-bottom: 100px;
+    }
+
+    /* Header Starts */
+
+    .top {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .brand {
+        font-size: 20px;
+    }
+
+    .brand span:nth-child(2) {
+        font-size: 26px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .top nav {
+        display: block;
+    }
+
+    .top nav ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+
+    .top nav ul a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .top nav ul div a {
+        text-decoration: none;
+        background-color: #fff;
+        color: #DC143C;
+        padding: 5px 10px;
+        border-radius: 2px;
+    }
+
+
+    /* Header Ends */
+
+    /* Hero Starts */
+
+    .hero {
+        height: 550px;
+    }
+
+    .cta1 {
+        padding: 20px;
+        top: 300px;
+        bottom: 100px;
+        left: 200px;
+        right: 200px;
+    }
+
+    .cta1 p {
+        font-size: 22px;
+    }
+
+    .cta1 a {
+        font-size: 18px;
+    }
+
+    /* Hero Ends */
+
+    /* Mission section Starts */
+
+    .mission {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .mission p {
+        font-size: 20px;
+    }
+
+    /* Mission section Ends */
+
+    /* Event section starts */
+
+    .event-list {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 80px;
+    }
+
+    .event-list img {
+        width: 100%;
+    }
+
+    .event p {
+        font-size: 16px;
+    }
+
+    .event a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    /* Event section ends */
+
+    /* Call to action in main starts */
+    .cta2 {
+        margin-top: 80px;
+        padding: 40px;
+        font-weight: 600;
+        gap: 20px;
+        font-weight: normal;
+    }
+
+    .cta2 span {
+        font-size: 24px;
+    }
+
+    .cta2 a {
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    /* Call to action in main ends */
+
+    /* Sponsors section starts */
+
+    .sponsor-list {
+        padding: 0 80px;
+    }
+
+    /* Sponsors section ends */
+
+    /* Spotlight section starts */
+
+
+    .spotlight-list {
+        width: 900px;
+        height: 200px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlight-list img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .spotlight-list .card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* Spotlight section ends */
+
+    /* Weather API starts */
+
+    .weather {
+        margin-top: 100px;
+    }
+
+    /* Weather API ends */
+
+    /* Footer section starts */
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    /* Footer section ends */
+}
