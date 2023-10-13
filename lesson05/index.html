@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:url" content="https://guyrandalf.github.io/wdd230/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Randalf Ehigiator - WDD 230 - Web Frontend Development">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Randalf Ehigiator">
+    <meta name="description" content="WDD 230, Osabuohien Randalf Ehigiator, Document Object Model DOM">
+    <link rel="icon" href="favicon.ico">
+    <title>Document Object Model DOM</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            👈 Back</a>
+        <h1>Document Object Model</h1>
+        <h2>Randalf O. Ehigiator</h2>
+    </header>
+    <h1>📘 Book of Mormon - Top 10</h1>
+    <main>
+        <label for="favchap">Enter a Book and a Chapter
+            <input type="text" id="favchap" placeholder="Alma 5" required></label>
+        <button aria-label="Add a new chapter to the list" type="submit">Add New Chapter</button>
+        <div class="listcontainer">
+            <ul id="list">
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="year"></span> Osabuohien Randalf Ehigiator | Ibadan, Nigeria
+        </p>
+        <p>Last Updated: <span id="modify"></span></p>
+    </footer>
+    <script src="scripts/app.js" defer></script>
+    </div>
+</body>
+
+</html>

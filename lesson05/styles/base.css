@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    height: 100vh;
+}
+
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+input,
+button {
+    padding: 0.5rem;
+}
+
+button {
+    margin: 0.5rem;
+}
+
+.delete {
+    width: fit-content;
+}
+
+.input {
+    display: flex;
+    gap: 1rem;
+}
+
+.list {
+    padding: 0.5rem;
+}
+
+ul {
+    margin: 1rem;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #551a8b;
+    padding: 10px;
+    text-align: center;
+}
+
+header a {
+    color: #bfdbf7;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header h1,
+header h2 {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #ddd;
+}
+
+main label {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin: 10px 15px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #ccc;
+    height: auto;
+    overflow: auto;
+}
+
+section h3 {
+    background-color: #551a8b;
+    opacity: .8;
+    color: #ffffff;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+section h3,
+section p,
+section a,
+section img {
+    padding: 10px;
+}
+
+section p,
+section a {
+    padding: 0 10px;
+    font-size: 22px;
+}
+
+section img {
+    height: 400px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #551a8b;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
