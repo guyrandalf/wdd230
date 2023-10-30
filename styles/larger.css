@@ -1,4 +1,4 @@
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 920px) {
     nav ul {
         display: flex;
         flex-direction: row;
@@ -26,5 +26,17 @@
 
     .menu {
         display: none;
+    }
+
+    .map {
+        max-width: initial;
+    }
+
+    picture:nth-child(1) {
+        display: none;
+    }
+
+    picture:nth-child(2) {
+        display: block;
     }
 }
