@@ -57,7 +57,11 @@
     </header>
     <main>
         <div class="hero">
-            <img src="images/hero_image.jpg" alt="Hero_Image">
+            <img id="hero-img" src="images/750x.webp" alt="Hero Image" srcset="images/3000x.webp 3000w,
+                                    images/1500x.webp 1500w,
+                                    images/1000x.webp 1000w,            
+                                    images/750x.webp 750w,
+                                    images/400x.webp 400w" sizes="(max-width:47.5rem) 100vw, 50vw">
             <div class="cta1">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, harum?</p>
                 <a href="#">Learn more</a>
@@ -130,8 +134,17 @@
         </section>
         <section class="weather">
             <h1>Current weather state</h1>
-            <div class="card">
-                <p>Weather API goes here</p>
+            <div class="card" style="display: flex; flex-direction: column">
+                <div id="weather">
+                    <h3 class="weather">Weather</h3>
+                    <p><span id="current-temp"></span> &deg;F</p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                    <p><span id="feels-like"></span></p>
+                    <figure>
+                        <img src="" alt="" id="weather-icon" />
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
     </main>
@@ -141,6 +154,7 @@
         </p>
     </footer>
     <script defer src="scripts/app.js"></script>
+    <script defer src="scripts/windchill.js"></script>
 </body>
 
 </html>
