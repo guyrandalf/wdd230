@@ -27,8 +27,6 @@ main {
     margin-bottom: 100px;
 }
 
-/* Header Starts */
-
 .top {
     display: flex;
     justify-content: space-between;
@@ -106,7 +104,6 @@ main {
 
 .bottom nav ul li {
     display: flex;
-    /* background-color: #AB031C; */
     align-items: center;
     justify-content: center;
     padding: 10px 40px;
@@ -153,11 +150,6 @@ main {
 }
 
 
-
-/* Header Ends */
-
-/* Hero Starts */
-
 .hero {
     height: 250px;
     position: relative;
@@ -195,9 +187,6 @@ main {
     font-size: 10px;
 }
 
-/* Hero Ends */
-
-/* Mission section Starts */
 
 .mission {
     display: flex;
@@ -211,10 +200,6 @@ main {
 .mission p {
     font-size: 14px;
 }
-
-/* Mission section Ends */
-
-/* Event section starts */
 
 .event {
     display: flex;
@@ -258,9 +243,6 @@ main {
     border-bottom-right-radius: 10px;
 }
 
-/* Event section ends */
-
-/* Call to action in main starts */
 .cta2 {
     margin-top: var(--mt);
     margin-bottom: var(--mb);
@@ -284,9 +266,6 @@ main {
     border-radius: 2px;
 }
 
-/* Call to action in main ends */
-
-/* Sponsors section starts */
 .sponsor {
     margin-top: var(--mt);
     display: flex;
@@ -306,10 +285,6 @@ main {
 .sponsor-list img {
     width: 100%;
 }
-
-/* Sponsors section ends */
-
-/* Spotlight section starts */
 
 .spotlight {
     display: flex;
@@ -345,11 +320,6 @@ main {
     border-radius: 50%;
 }
 
-
-/* Spotlight section ends */
-
-/* Weather API starts */
-
 .weather {
     display: flex;
     flex-direction: column;
@@ -360,7 +330,6 @@ main {
 .weather .card {
     display: flex;
     gap: 20px;
-    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
@@ -368,10 +337,6 @@ main {
     border-radius: 2px;
     box-shadow: 0px -.5px 1px 1.5px #eee;
 }
-
-/* Weather API ends */
-
-/* Footer section starts */
 
 footer {
     position: relative;
@@ -390,5 +355,3 @@ footer p {
     margin-top: 5px;
     margin-bottom: 0;
 }
-
-/* Footer section ends */

@@ -7,8 +7,6 @@
         margin-bottom: 100px;
     }
 
-    /* Header Starts */
-
     .top {
         padding-left: 80px;
         padding-right: 80px;
@@ -50,11 +48,6 @@
         border-radius: 2px;
     }
 
-
-    /* Header Ends */
-
-    /* Hero Starts */
-
     .hero {
         height: 550px;
     }
@@ -75,10 +68,6 @@
         font-size: 18px;
     }
 
-    /* Hero Ends */
-
-    /* Mission section Starts */
-
     .mission {
         margin-left: 100px;
         margin-right: 100px;
@@ -87,10 +76,6 @@
     .mission p {
         font-size: 20px;
     }
-
-    /* Mission section Ends */
-
-    /* Event section starts */
 
     .event-list {
         grid-template-columns: repeat(4, 1fr);
@@ -110,9 +95,6 @@
         padding: 5px;
     }
 
-    /* Event section ends */
-
-    /* Call to action in main starts */
     .cta2 {
         margin-top: 80px;
         padding: 40px;
@@ -130,18 +112,9 @@
         font-weight: bold;
     }
 
-    /* Call to action in main ends */
-
-    /* Sponsors section starts */
-
     .sponsor-list {
         padding: 0 80px;
     }
-
-    /* Sponsors section ends */
-
-    /* Spotlight section starts */
-
 
     .spotlight-list {
         width: 900px;
@@ -159,17 +132,9 @@
         padding: 20px;
     }
 
-    /* Spotlight section ends */
-
-    /* Weather API starts */
-
     .weather {
         margin-top: 100px;
     }
-
-    /* Weather API ends */
-
-    /* Footer section starts */
 
     footer {
         flex-direction: row;
@@ -180,6 +145,4 @@
     footer p {
         font-size: 16px;
     }
-
-    /* Footer section ends */
 }
