@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta property="og:url" content="https://guyrandalf.github.io/wdd230/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Randalf Ehigiator - WDD 230 - Web Frontend Development">
+    <meta property="og:image" content="https://guyrandalf.github.io/wdd230/images/profile.webp">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Randalf Ehigiator">
+    <meta name="description" content="WDD 230, Osabuohien Randalf Ehigiator, course assignment portal">
+    <link rel="icon" href="favicon.ico">
+    <title>Randalf Ehigiator - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/profile.webp" alt="My_photo">
+        <h1>Randalf O. Ehigiator</h1>
+    </header>
+    <nav>
+        <div class="menu" id="button-container">
+            <div class="button-container">
+                <span class="menu-button"></span>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+            </li>
+            <li>
+                <a href="chamber/index.html">Chamber</a>
+            </li>
+            <li>
+                <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+            </li>
+            <li>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div id="formmessage"></div>
+        <form action="record.html" method="get">
+            <label for="username">Username</label>
+            <input type="text" name="Username" id="username" required>
+            <label for="password">Password </label>
+            <input type="password" name="password" id="password" pattern="[A-Za-z0-9]{8,}" required>
+            <label for="password2">Retype Password </label> <input type="password" name="password2" id="password2"
+                pattern="[A-Za-z0-9]{8,}" required>
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                title="Please enter a valid email address" required>
+            <label for="rating">Page Rating </label>
+            <input type="range" name="rating" id="rating" min="1" max="10" value="1" step="1">
+            <div id="rangevalue">1</div>
+            <datalist id="rangevalues">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+            <input type="submit" value="Register" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <p>&nbsp; 2023 Randalf Ehigiator Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
