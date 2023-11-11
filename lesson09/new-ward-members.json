@@ -1,0 +1,44 @@
+{
+    "familyName" : "Ehigiator",
+    "homeTown" : "Benin",
+    "moved" : "12-12-2009",
+    "no_members" : 7,
+    "bishopric_visit" : true,
+    "members" : [
+        {
+            "name" : "John Ehigiator",
+            "gender": "Male",
+            "birthdate": "12-12-1998"
+        },
+        {
+            "name" : "Jaace Ehigiator",
+            "gender": "Male",
+            "birthdate": "12-12-1998"
+        },
+        {
+            "name" : "Bubu Ehigiator",
+            "gender": "Male",
+            "birthdate": "12-12-1998"
+        },
+        {
+            "name" : "Pepisco Ehigiator",
+            "gender": "Female",
+            "birthdate": "12-12-1998"
+        },
+        {
+            "name" : "Maryjane Ehigiator",
+            "gender": "Female",
+            "birthdate": "12-12-1998"
+        },
+        {
+            "name" : "Felicia Ehigiator",
+            "gender": "Female",
+            "birthdate": "12-12-1998"
+        },
+        {
+            "name" : "Franca Ehigiator",
+            "gender": "Female",
+            "birthdate": "12-12-1998"
+        }
+    ]
+}
