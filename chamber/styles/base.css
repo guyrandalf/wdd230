@@ -429,12 +429,9 @@ button {
   justify-content: center;
 }
 .cardslist section {
-  border: 2px solid var(--orange);
-  background-color: var(--light-blue);
+  color: #dc143c;  
   padding: 30px;
   text-align: center;
-  width: 95%;
-  margin: 20px;
 }
 .cardslist section:hover {
   box-shadow: 5px 5px 9px 3px #888888;
