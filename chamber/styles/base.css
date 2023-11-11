@@ -407,8 +407,6 @@ button {
   justify-content: center;
 }
 .cardsgrid section {
-  border: 2px solid var(--orange);
-  background-color: var(--light-blue);
   padding: 30px;
   text-align: center;
   width: 300px;
