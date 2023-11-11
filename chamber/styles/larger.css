@@ -1,148 +1,168 @@
 @media (min-width: 1025px) {
-    h1 {
-        font-size: 30px;
-    }
+  h1 {
+    font-size: 30px;
+  }
 
-    main {
-        margin-bottom: 100px;
-    }
+  main {
+    margin-bottom: 100px;
+  }
 
-    .top {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
+  .top {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 
-    .brand {
-        font-size: 20px;
-    }
+  .brand {
+    font-size: 20px;
+  }
 
-    .brand span:nth-child(2) {
-        font-size: 26px;
-    }
+  .brand span:nth-child(2) {
+    font-size: 26px;
+  }
 
-    .hamburger {
-        display: none;
-    }
+  .hamburger {
+    display: none;
+  }
 
-    .top nav {
-        display: block;
-    }
+  .top nav {
+    display: block;
+  }
 
-    .top nav ul {
-        display: flex;
-        gap: 30px;
-        list-style: none;
-    }
+  .top nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
 
-    .top nav ul a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-    }
+  .top nav ul a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
 
-    .top nav ul li:last-child a {
-        text-decoration: none;
-        background-color: #fff;
-        color: #DC143C;
-        padding: 5px 15px;
-        border-radius: 2px;
-    }
+  .top nav ul li:last-child a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #dc143c;
+    padding: 5px 15px;
+    border-radius: 2px;
+  }
 
-    .hero {
-        height: 550px;
-    }
+  .hero {
+    height: 550px;
+  }
 
-    .cta1 {
-        padding: 20px;
-        top: 300px;
-        bottom: 100px;
-        left: 200px;
-        right: 200px;
-    }
+  .cta1 {
+    padding: 20px;
+    top: 300px;
+    bottom: 100px;
+    left: 200px;
+    right: 200px;
+  }
 
-    .cta1 p {
-        font-size: 22px;
-    }
+  .cta1 p {
+    font-size: 22px;
+  }
 
-    .cta1 a {
-        font-size: 18px;
-    }
+  .cta1 a {
+    font-size: 18px;
+  }
 
-    .mission {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+  .mission {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 
-    .mission p {
-        font-size: 20px;
-    }
+  .mission p {
+    font-size: 20px;
+  }
 
-    .event-list {
-        grid-template-columns: repeat(4, 1fr);
-        padding: 0 80px;
-    }
+  .event-list {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 80px;
+  }
 
-    .event-list img {
-        width: 100%;
-    }
+  .event-list img {
+    width: 100%;
+  }
 
-    .event p {
-        font-size: 16px;
-    }
+  .event p {
+    font-size: 16px;
+  }
 
-    .event a {
-        font-size: 14px;
-        padding: 5px;
-    }
+  .event a {
+    font-size: 14px;
+    padding: 5px;
+  }
 
-    .cta2 {
-        margin-top: 80px;
-        padding: 40px;
-        font-weight: 600;
-        gap: 20px;
-        font-weight: normal;
-    }
+  .cta2 {
+    margin-top: 80px;
+    padding: 40px;
+    font-weight: 600;
+    gap: 20px;
+    font-weight: normal;
+  }
 
-    .cta2 span {
-        font-size: 24px;
-    }
+  .cta2 span {
+    font-size: 24px;
+  }
 
-    .cta2 a {
-        padding: 10px;
-        font-weight: bold;
-    }
+  .cta2 a {
+    padding: 10px;
+    font-weight: bold;
+  }
 
-    .sponsor-list {
-        padding: 0 80px;
-    }
+  .sponsor-list {
+    padding: 0 80px;
+  }
 
-    .spotlight-list {
-        width: 900px;
-        height: 200px;
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .spotlight-list {
+    width: 900px;
+    height: 200px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    .spotlight-list img {
-        width: 150px;
-        height: 150px;
-    }
+  .spotlight-list img {
+    width: 150px;
+    height: 150px;
+  }
 
-    .spotlight-list .card {
-        flex-direction: column;
-        padding: 20px;
-    }
+  .spotlight-list .card {
+    flex-direction: column;
+    padding: 20px;
+  }
 
-    .weather {
-        margin-top: 100px;
-    }
+  .weather {
+    margin-top: 100px;
+  }
 
-    footer {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px 40px;
-    }
+  #div-join {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+  }
 
-    footer p {
-        font-size: 16px;
-    }
+  .form-box input,
+  .form-box select {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  form {
+    width: 100%;
+  }
+  #div-join {
+    grid-column: 1/4;
+    z-index: 0;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
 }

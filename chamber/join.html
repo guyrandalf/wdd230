@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta property="og:url" content="https://guyrandalf.github.io/wdd230/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://guyrandalf.github.io/wdd230/chamber/images/og.webp">
+    <meta property="og:title" content="Randalf Ehigiator - WDD 230 - Web Frontend Development">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Randalf Ehigiator">
+    <meta name="description" content="WDD 230, Osabuohien Randalf Ehigiator, Chamber of Commerce Homepage">
+    <link rel="icon" href="../favicon.ico">
+    <title>Randalf Ehigiator - WDD 230 - Ibadan City Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="brand">
+                <span>IBADAN CHAMBER</span>
+                <span>OF COMMERCE</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li>
+                        <a href="#">JOIN</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="bottom">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li>
+                        <a href="#">JOIN</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="div-join">
+            <h1>Membership Application</h1>
+            <form action="thankyou.html" name="my-form" method="get">
+                <section class="form-box">
+                    <label for="first">First Name *</label>
+                    <input type="text" id="first" name="first" placeholder="First Name" required>
+                </section>
+                <section class="form-box">
+                    <label for="last">Last Name *</label>
+                    <input type="text" id="last" name="last" placeholder="Last Name" required>
+                </section>
+                <section class="form-box">
+                    <label for="position">Position</label>
+                    <input type="text" id="position" name="position" placeholder="Busines Position"
+                        pattern="[- A-Za-z]{7,}">
+                </section>
+                <section class="form-box">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="user@gmail.com" required>
+                </section>
+                <section class="form-box">
+                    <label for="phone">Phone *</label>
+                    <input type="tel" name="phone" id="phone" placeholder="___-___-____" required>
+                </section>
+                <section class="form-box">
+                    <label for="busines">Busines *</label>
+                    <input type="text" id="busines" name="busines" placeholder="Busines Name" required>
+                </section>
+                <section class="form-box">
+                    <label for="membership">Membership Level</label>
+                    <select name="membership" id="membership">
+                        <option value="select">-Select-</option>
+                        <option value="NP">Non Profit</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gild">Gold</option>
+                    </select>
+                </section>
+                <section class="form-box">
+                    <label for="description">Busines Description</label>
+                    <textarea name="description" id="description" cols="30" rows="10"
+                        placeholder="Type here..."></textarea>
+                    <section class="form-box">
+                        <input type="hidden" id="datetime" name="datetime" value="0">
+                    </section>
+                </section>
+                <section class="form-box">
+                    <button id="btnSend">Join now</button>
+                </section>
+            </form>
+        </div>
+        <div id="memberships">
+            <h3>Membership Levels</h3>
+            <P>Non-Profit: Comes with no membership fee. 20 hour trainging course avaiable at with no cost. Free
+                advertizing avaiable once per month. </P>
+            <P>Bronze: Membership fee of $75. 5 hour training course avaiable with no cost, and every additional hour of
+                training is $10 per hour. Advertising once per quarter (four times per year) at $20 per post.</P>
+            <P>Silver: Membership fee of $150. 10 hour training course avaiable with no cost, and every additional hour
+                of training is $8 per hour. Advertising avaiable six times per year at $15 per post.</P>
+            <P>Gold: Membership fee of $300. 20 hour training course avaiable with no cost. Unlimited advertising at $10
+                per post. </P>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; Copyright 2023. Ibadan Chamber of Commerce</p>
+        <p><span id="lastModified"></span> by Osabuohien Randalf Ehigiator WDD 230
+        </p>
+    </footer>
+    <script defer src="scripts/app.js"></script>
+    <script defer src="scripts/windchill.js"></script>
+</body>
+
+</html>

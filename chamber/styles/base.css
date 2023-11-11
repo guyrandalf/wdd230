@@ -338,6 +338,68 @@ main {
     box-shadow: 0px -.5px 1px 1.5px #eee;
 }
 
+/* Join */
+
+#div-join{
+    display: block;
+    margin: 0 auto;
+    width: 400px;    
+}
+*, *::before, *:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#memberships {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+
+#memberships p{
+    text-align: left;
+    padding: 12px;
+}
+
+.form-box input, .form-box textarea {
+    padding-left: 3px;
+}
+
+.form-box button {
+    background-color: #AB031C;
+    color: #fff;
+    border: none;
+    padding: .5rem;
+}
+
+select, option, input, label, button{
+    padding: 0.2rem 0rem;
+    font-size: 1rem;
+    color: #AB031C;
+}
+.form-box{
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box textarea{
+    flex-basis: 100%;
+}
+
+#thank-you{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#thank-you p {
+    font-size: 24px;
+}
+
 footer {
     position: relative;
     background-color: #444;
@@ -345,7 +407,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 10px;    
     bottom: 0;
     top: 0;
 }

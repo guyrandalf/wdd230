@@ -18,3 +18,5 @@ let currentdate = document.lastModified;
 document.getElementById(
     "lastModified"
 ).textContent = `Last Updated: ${currentdate}`;
+
+document.querySelector("#datetime").value = Date.now();
