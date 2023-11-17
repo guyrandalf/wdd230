@@ -1,0 +1,23 @@
+body{
+    text-align: center;    
+    color: #551a8b;
+}
+#current-temp{
+   font-weight: bold;
+}
+figure img{
+    width: 75px;
+}
+h1{
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #551a8b, 0 0 40px #551a8b, 0 0 50px #551a8b, 0 0 60px #551a8b, 0 0 70px #551a8b;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #3e50f1, 0 0 40px #3e50f1, 0 0 50px #3e50f1, 0 0 60px #3e50f1, 0 0 70px #3e50f1, 0 0 80px #3e50f1;
+    }
+  }
