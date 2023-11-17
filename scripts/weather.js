@@ -8,8 +8,8 @@ let lon = 3.9476320227986013
 let latFixed = lat.toFixed(2)
 let lonFixed = lon.toFixed(2)
 
-const url =
-  `https://api.openweathermap.org/data/2.5/weather?lat=${latFixed}&lon=${lonFixed}&appid=1aa127830d80bc4014569d5f214be441`
+  const url = `http://api.openweathermap.org/data/2.5/weather?lat=${latFixed}&lon=${lonFixed}&units=imperial&appid=1aa127830d80bc4014569d5f214be441`
+
 async function apiFetch(){
     try {
         const response = await fetch(url)
@@ -27,8 +27,8 @@ async function apiFetch(){
 
 function displayResults(data) {
     farenheitValue = data.main.temp
-    // celciusValue = (5 * (farenheitValue - 32) /9).toFixed(0)
-    currentTemp.innerHTML = `${farenheitValue}&deg;F`
+    celciusValue = (5 * (farenheitValue - 32) /9).toFixed(0)
+    currentTemp.innerHTML = `${celciusValue}&deg;C`
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
     let desc = data.weather[0].description
     weatherIcon.setAttribute('src', iconsrc)
