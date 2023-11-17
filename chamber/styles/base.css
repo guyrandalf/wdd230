@@ -318,14 +318,38 @@ main {
   border-radius: 50%;
 }
 
-.weather {  
+.weather {
   text-align: center;
   width: 300px;
   margin: 0 auto;
 }
 
-.location, #country {
-  color: #44097a;  
+.meeting-notice {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  background-color: #fff;
+  color: #dc143c;
+  font-weight: 600;
+  font-size: 18px;
+  top: 0;
+  gap: 10px;
+}
+
+.meeting-notice span {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.meeting-notice .close-btn {
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+.location,
+#country {
+  color: #44097a;
   font-weight: 700;
   font-size: 24px;
 }
@@ -432,13 +456,13 @@ button {
 }
 
 .cardslist {
-  display: flex;  
+  display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
 }
 .cardslist section {
-  color: #dc143c;  
+  color: #dc143c;
   padding: 30px;
   text-align: center;
 }
@@ -467,9 +491,9 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
   text-transform: uppercase;
-  font-weight: 700;  
+  font-weight: 700;
 }
 
 .cardslist section {
