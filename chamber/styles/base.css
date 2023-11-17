@@ -318,11 +318,22 @@ main {
   border-radius: 50%;
 }
 
-.weather {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.weather {  
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.location, #country {
+  color: #44097a;  
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#current-temp {
+  color: #ab031c;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .weather .card {

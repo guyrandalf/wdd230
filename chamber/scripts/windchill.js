@@ -1,56 +1,65 @@
-// select HTML elements to edit
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-const windSpeed = document.querySelector('#wind-speed');
-const windChill = document.querySelector('#feels-like');
+const currentTemp = document.querySelector("#current-temp");
+const weatherIcon = document.querySelector("#weather-icon");
+const captionDesc = document.querySelector("figcaption");
+const city = document.querySelector(".location");
+const country = document.querySelector("#country");
+const windSpeed = document.querySelector("#wind-speed");
+const windChill = document.querySelector("#feels-like");
+const forecastContainer = document.querySelector("#forecast"); // Container to display forecast
 
+let lat = 7.385555104478326;
+let lon = 3.9476320227986013;
 
-//API URL with arguments  
-// id for fairbanks alaska is 5861897
-const url = 'https://api.openweathermap.org/data/2.5/weather?id=5861897&appid=d10750740ac29f4c233177823a633962';
+let latFixed = lat.toFixed(2);
+let lonFixed = lon.toFixed(2);
 
+const url = `http://api.openweathermap.org/data/2.5/forecast?lat=${latFixed}&lon=${lonFixed}&units=metric&appid=1aa127830d80bc4014569d5f214be441`;
 
-fetch(url)
-  .then((response) => response.json())
-  .then((data) => {
-    let k = data.main.temp;
-    f = ((k-273.15) * (9/5) + 32).toFixed(0);
-    currentTemp.textContent = f;
-    // currentTemp.innerHTML = `<strong>${data.main.temp.toFixed(0)}</strong>`
+async function apiFetch() {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      // console.log(data);
+      displayResults(data);
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+}
 
-    // wind chill
-    // windSpeed.innerHTML = `<strong>${data.wind.speed.toFixed(0)}</strong>`;
-    let w = data.wind.speed.toFixed(0);
-    windSpeed.textContent = w;
+function displayResults(data) {
+  const currentTemperature = data.list[0].main.temp;
+  const currentDescription = data.list[0].weather[0].description;
+  currentTemp.innerHTML = `${currentTemperature}&deg;C`;
+  captionDesc.textContent = currentDescription.toUpperCase();
+  city.innerHTML = data.city.name;
+  country.innerHTML = data.city.country;
 
+  let w = data.list[0].wind.speed;
+  windSpeed.textContent = w;
+  let f = data.list[0].main.feels_like;
 
+  const iconsrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`;
+  let desc = data.list[0].weather[0].description;
 
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    const desc = data.weather[0].description;
+  weatherIcon.setAttribute("src", iconsrc);
+  weatherIcon.setAttribute("alt", desc);
 
-    // weather icon
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
+  // Display the forecast for the next three days
+  const forecastList = data.list.slice(1, 4);
+  // Considering next 8 entries (every 3 hours for 24 hours = 8 intervals)
+  forecastContainer.innerHTML = ""; // Clear previous forecast
 
-    // wind chill
-    builtWC(w, f);
+  forecastList.forEach((forecast, index) => {
+    const temperature = forecast.main.temp;
+    const forecastItem = document.createElement("div");
+    forecastItem.innerHTML = `Day ${index + 1}: ${temperature.toFixed(
+      0
+    )}&deg;C`;
+    forecastContainer.appendChild(forecastItem);
   });
-
-   function builtWC(w, f){
-     //compute the windchill
-     let wc = 35.74 + (0.6215 * f) - (35.75 * Math.pow(w, 0.16)) + (0.4275 * f * Math.pow(w, 0.16));
-
-     //round answer down to nearest whole number
-     wc = Math.floor(wc);
-
-     //if chill is greater than temp, just return the temp
-     wc = (wc > f) ? f : wc;
-
-     //display the windchill
-     if (w > 3 && f < 50)
-        windChill.innerHTML = "Feels like: " + wc + "º";
-     else
-     windChill.innerHTML = "No wind chill";
-    };
+}
+apiFetch();
