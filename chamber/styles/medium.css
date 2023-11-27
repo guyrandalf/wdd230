@@ -1,124 +1,123 @@
 @media (min-width: 600px) and (max-width: 1024px) {
+  h1 {
+    font-size: 22px;
+  }
 
-    h1 {
-        font-size: 22px;
-    }
+  .hero {
+    height: 400px;
+  }
 
-    .hero {
-        height: 400px;
-    }
+  .cta1 {
+    padding: 20px;
+    top: 240px;
+    right: 130px;
+  }
 
-    .cta1 {
-        padding: 20px;
-        top: 240px;
-        right: 80px;
-    }
+  .cta1 p {
+    font-size: 18px;
+  }
 
-    .cta1 p {
-        font-size: 18px;
-    }
+  .cta1 a {
+    font-size: 14px;
+  }
 
-    .cta1 a {
-        font-size: 14px;
-    }
+  .mission {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
-    .mission {
-        margin-left: 80px;
-        margin-right: 80px;
-    }
+  .mission p {
+    font-size: 16px;
+  }
 
-    .mission p {
-        font-size: 16px;
-    }
+  .event-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .event-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .event-list .card {
+    width: 200px;
+    padding: 20px;
+  }
 
-    .event-list .card {
-        width: 200px;
-        padding: 20px;
-    }
+  .event-list img {
+    width: 100%;
+  }
 
-    .event-list img {
-        width: 100%;
-    }
+  .event p {
+    font-size: 14px;
+  }
 
-    .event p {
-        font-size: 14px;
-    }
+  .event a {
+    font-size: 12px;
+    padding: 5px;
+  }
 
-    .event a {
-        font-size: 12px;
-        padding: 5px;
-    }
+  .cta2 {
+    padding: 40px 80px;
+    flex-direction: row;
+  }
 
-    .cta2 {
-        padding: 40px 80px;
-        flex-direction: row;
-    }
+  .cta2 a {
+    padding: 10px;
+    border-radius: 2px;
+  }
 
-    .cta2 a {
-        padding: 10px;
-        border-radius: 2px;
-    }
+  .spotlight-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 600px;
+  }
 
-    .spotlight-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 600px;
-    }
+  .spotlight-list .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0px -0.5px 1px 1.5px #eee;
+  }
 
-    .spotlight-list .card {
-        display: flex;
-        gap: 20px;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fff;
-        padding: 10px;
-        border-radius: 2px;
-        box-shadow: 0px -.5px 1px 1.5px #eee;
-    }
+  .spotlight-list img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
 
-    .spotlight-list img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-    }
+  .weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .weather {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .weather .card {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0px -0.5px 1px 1.5px #eee;
+  }
 
-    .weather .card {
-        display: flex;
-        gap: 20px;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fff;
-        padding: 10px;
-        border-radius: 2px;
-        box-shadow: 0px -.5px 1px 1.5px #eee;
-    }
+  footer {
+    position: relative;
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    bottom: 0;
+    top: 0;
+  }
 
-    footer {
-        position: relative;
-        background-color: #444;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        bottom: 0;
-        top: 0;
-    }
-
-    footer p {
-        font-size: 14px;
-        margin-top: 5px;
-        margin-bottom: 0;
-    }    
+  footer p {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
 }
