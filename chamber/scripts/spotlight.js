@@ -1,5 +1,5 @@
 "use strict";
-const requestURL = " https://nemo3003.github.io/wdd230/chamber/data/spotlight.json";
+const requestURL = " https://guyrandalf.github.io/wdd230/chamber/json/spotlight.json";
 // Get the JSON data
 let positions1 = [0, 1, 2]
 let positions2 = [3, 4, 5]

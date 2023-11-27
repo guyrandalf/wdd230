@@ -8,7 +8,7 @@ let lon = 3.9476320227986013;
 let latFixed = lat.toFixed(2);
 let lonFixed = lon.toFixed(2);
 
-const url = `http://api.openweathermap.org/data/2.5/weather?lat=${latFixed}&lon=${lonFixed}&units=imperial&appid=1aa127830d80bc4014569d5f214be441`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latFixed}&lon=${lonFixed}&units=imperial&appid=1aa127830d80bc4014569d5f214be441`;
 
 async function apiFetch() {
   try {

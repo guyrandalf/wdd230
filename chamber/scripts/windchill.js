@@ -13,7 +13,7 @@ let lon = 3.9476320227986013;
 let latFixed = lat.toFixed(2);
 let lonFixed = lon.toFixed(2);
 
-const url = `http://api.openweathermap.org/data/2.5/forecast?lat=${latFixed}&lon=${lonFixed}&units=metric&appid=1aa127830d80bc4014569d5f214be441`;
+const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${latFixed}&lon=${lonFixed}&units=metric&appid=1aa127830d80bc4014569d5f214be441`;
 
 async function apiFetch() {
   try {
@@ -48,10 +48,8 @@ function displayResults(data) {
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", desc);
 
-  // Display the forecast for the next three days
   const forecastList = data.list.slice(1, 4);
-  // Considering next 8 entries (every 3 hours for 24 hours = 8 intervals)
-  forecastContainer.innerHTML = ""; // Clear previous forecast
+  forecastContainer.innerHTML = "";
 
   forecastList.forEach((forecast, index) => {
     const temperature = forecast.main.temp;
