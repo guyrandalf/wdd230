@@ -21,7 +21,7 @@ function displayAds(ads) {
   img.setAttribute("alt", ads.name);
   img.setAttribute("loading", "lazy");
 
-  cardDiv.appendChild(img);
+  // cardDiv.appendChild(img);
   cardDiv.appendChild(p);
 
   spotlight.appendChild(cardDiv);

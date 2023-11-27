@@ -48,8 +48,8 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Discover</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li>
                         <a href="join.html">JOIN</a>
@@ -60,11 +60,7 @@
     </header>
     <main>
         <div class="hero">
-            <img id="hero-img" src="images/750x.webp" alt="Hero Image" srcset="images/3000x.webp 3000w,
-                                    images/1500x.webp 1500w,
-                                    images/1000x.webp 1000w,            
-                                    images/750x.webp 750w,
-                                    images/400x.webp 400w" sizes="(max-width:47.5rem) 100vw, 50vw">
+            <img loading="lazy" src="images/og.webp" alt="Hero Image">
             <div class="cta1">
                 <h1>Ibadan Chamber of Commerce</h1>
                 <a href="directory.html">Learn more</a>
@@ -81,39 +77,36 @@
             <h3>Upcoming Events</h3>
             <div class="event-list">
                 <div class="card">
-                    <img src="images/hero_image.jpg" alt="Entrepreneurial_Workshop_Series">
-                    <p>Empowering startups with actionable insights and strategies.
+                    <img loading="lazy" src="images/xmas_show.webp" alt="Entrepreneurial_Workshop_Series">
+                    <p>A Christmas Show - Empowering startups with actionable insights and strategies.
                     </p>
-                    <a href="#">Read more</a>
                 </div>
                 <div class="card">
-                    <img src="images/hero_image.jpg" alt="Business_Networking_Mixer">
-                    <p>Connect, collaborate, and cultivate meaningful professional relationships.</p>
-                    <a href="#">Read more</a>
+                    <img loading="lazy" src="images/macarons_tuesday.webp" alt="Business_Networking_Mixer">
+                    <p>MacaronsEla - Connect, collaborate, and cultivate meaningful professional relationships.</p>
                 </div>
                 <div class="card">
-                    <img src="images/hero_image.jpg" alt="Economic_Forecast_Luncheon">
-                    <p>Gain valuable insights into upcoming market trends and opportunities.</p>
-                    <a href="#">Read more</a>
+                    <img loading="lazy" src="images/valentines.webp" alt="Economic_Forecast_Luncheon">
+                    <p>The Valentine's Day Show - Lovers come gain valuable insights into upcoming market trends and
+                        opportunities.</p>
                 </div>
                 <div class="card">
-                    <img src="images/hero_image.jpg" alt="Small_Business_Expo_&_Showcase">
-                    <p>Showcasing local talent and fostering community entrepreneurship.</p>
-                    <a href="#">Read more</a>
+                    <img loading="lazy" src="images/women_art.webp" alt="Small_Business_Expo_&_Showcase">
+                    <p>Women Art - Showcasing local talent and fostering community entrepreneurship.</p>
                 </div>
             </div>
         </section>
         <div class="cta2">
             <span>Want to know more about what we can do for you?</span>
-            <a href="#">Learn more</a>
+            <a href="about.html">Learn more</a>
         </div>
         <section class="sponsor">
             <h3>Official Sponsors</h3>
             <div class="sponsor-list">
-                <img src="images/hero_image.jpg" alt="Sponsor_1">
-                <img src="images/hero_image.jpg" alt="Sponsor_1">
-                <img src="images/hero_image.jpg" alt="Sponsor_1">
-                <img src="images/hero_image.jpg" alt="Sponsor_1">
+                <img loading="lazy" src="images/plant.webp" alt="Paiges_Plants">
+                <img loading="lazy" src="images/taco_1.webp" alt="Taco_Tuesday">
+                <img loading="lazy" src="images/food.webp" alt="FOL_Food_Drive">
+                <img loading="lazy" src="images/lawn.webp" alt="Lawn_Services">
             </div>
         </section>
         <section class="spotlight">
@@ -130,7 +123,7 @@
                     <p>Wind Speed: <span id="wind-speed"></span></p>
                     <p><span id="feels-like"></span></p>
                     <figure>
-                        <img src="#" alt="#" id="weather-icon">
+                        <img loading="lazy" src="images/computer.webp" alt="weather" id="weather-icon">
                         <figcaption></figcaption>
                     </figure>
                     <p id="forecast"></p>
@@ -144,6 +137,7 @@
         </p>
         <p class="lastVisited"></p>
     </footer>
+    <script defer src="scripts/lazy.js"></script>
     <script defer src="scripts/app.js"></script>
     <script defer src="scripts/spotlight.js"></script>
     <script defer src="scripts/windchill.js"></script>

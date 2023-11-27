@@ -68,15 +68,8 @@
     width: 600px;
   }
 
-  .spotlight-list .card {
-    display: flex;
+  .spotlight-list .card {    
     flex-direction: column;
-    gap: 10px;
-    text-align: center;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 2px;
-    box-shadow: 0px -0.5px 1px 1.5px #eee;
   }
 
   .spotlight-list img {
