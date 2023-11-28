@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta property="og:url" content="https://guyrandalf.github.io/wdd230/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://guyrandalf.github.io/wdd230/chamber/images/og.webp">
+    <meta property="og:title" content="Randalf Ehigiator - WDD 230 - Web Frontend Development">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Randalf Ehigiator">
+    <meta name="description" content="WDD 230, Osabuohien Randalf Ehigiator, Chamber of Commerce Homepage">
+    <link rel="icon" href="../favicon.ico">
+    <title>Randalf Ehigiator - WDD 230 - Ibadan City Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="brand">
+                <span>IBADAN CHAMBER</span>
+                <span>OF COMMERCE</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li>
+                        <a href="join.html">JOIN</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="bottom">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li>
+                        <a href="join.html">JOIN</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="discover">
+            <div class="sidebar">
+                <div id="visitMessage">
+                    <!-- Message about the last visit -->
+                </div>
+                <div class="card">
+                    <div class="population">
+                        <h3>The Total Population of Nigeria, which is the country Ibadan Chamber of Commerce is Located:
+                        </h3>
+                        <h4>Country: <span id="country"></span></h4>
+                        <h5>Population: <span id="population"></span></h5>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <header>
+                        <p class="current-date"></p>
+                        <div class="icons">
+                            <span id="prev" class="fas fa-chevron-left"></span>
+                            <span id="next" class="fas fa-chevron-right"></span>
+                        </div>
+                    </header>
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="days"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="image">
+                    <img class="lazy" data-src="images/xmas_show.webp" alt="Xmas Show">
+                </div>
+                <div class="image">
+                    <img class="lazy" data-src="images/valentines.webp" alt="Valentine is coming">
+                </div>
+                <div class="image">
+                    <img class="lazy" data-src="images/women_art.webp" alt="Women art desire">
+                </div>
+                <div class="image">
+                    <img class="lazy" data-src="images/xmas_show.webp" alt="Xmas Show">
+                </div>
+                <div class="image">
+                    <img class="lazy" data-src="images/valentines.webp" alt="Valentine is coming">
+                </div>
+                <div class="image">
+                    <img class="lazy" data-src="images/women_art.webp" alt="Women art desire">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Copyright 2023. Ibadan Chamber of Commerce</p>
+        <p><span id="lastModified"></span> by Osabuohien Randalf Ehigiator WDD 230
+        </p>
+        <p class="lastVisited"></p>
+    </footer>
+    <script defer src="scripts/app.js"></script>
+    <script src="scripts/discover.js"></script>
+    <script defer src="scripts/population.js"></script>
+    <script defer src="scripts/calendar.js"></script>
+</body>
+
+</html>

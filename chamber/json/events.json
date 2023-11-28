@@ -1,0 +1,24 @@
+{
+    "events": [
+        {
+            "imageSrc": "images/xmas_show.webp",
+            "altText": "Entrepreneurial_Workshop_Series",
+            "description": "A Christmas Show - Empowering startups with actionable insights and strategies."
+        },
+        {
+            "imageSrc": "images/macarons_tuesday.webp",
+            "altText": "Business_Networking_Mixer",
+            "description": "MacaronsEla - Connect, collaborate, and cultivate meaningful professional relationships."
+        },
+        {
+            "imageSrc": "images/valentines.webp",
+            "altText": "Economic_Forecast_Luncheon",
+            "description": "The Valentine's Day Show - Lovers come gain valuable insights into upcoming market trends and opportunities."
+        },
+        {
+            "imageSrc": "images/women_art.webp",
+            "altText": "Small_Business_Expo_&_Showcase",
+            "description": "Women Art - Showcasing local talent and fostering community entrepreneurship."
+        }
+    ]
+}

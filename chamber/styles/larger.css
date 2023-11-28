@@ -117,7 +117,7 @@
   }
 
   .spotlight-list {
-    width: auto;    
+    width: auto;
     grid-template-columns: repeat(3, 1fr);
     font-size: 24px;
   }
@@ -147,7 +147,7 @@
   form {
     width: 100%;
   }
-  
+
   #div-join {
     grid-column: 1/4;
     z-index: 0;
@@ -161,5 +161,30 @@
 
   footer p {
     font-size: 16px;
+  }
+
+  .discover {
+    grid-template-columns: 400px 1fr;
+  }
+
+  .sidebar {
+    grid-area: 1;
+  }
+
+  .content {
+    grid-area: span 2/4;
+  }
+
+  .sidebar .card {
+    min-width: 100%;
+  }
+
+  .sidebar .card:nth-child(2) .calendar .days,
+  .sidebar .card:nth-child(2) .calendar .weeks {
+    gap: 10px;
+  }
+
+  .content .image img {
+    min-width: 100%;
   }
 }

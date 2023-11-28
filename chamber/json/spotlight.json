@@ -1,18 +1,12 @@
 {
     "spotlight": [
         {
-            "name": "Member_Spotlight_Series",
-            "imageurl": "images/hero_image.jpg",
             "desc": "Showcasing our exceptional members and their success stories."
         },
         {
-            "name": "Business_of_the_Month_Feature",
-            "imageurl": "images/hero_image.jpg",
             "desc": "Recognizing outstanding businesses shaping our community."
         },
         {
-            "name": "Business_of_the_Month_Feature",
-            "imageurl": "images/hero_image.jpg",
             "desc": "Highlighting available grants and financial resources for businesses."
         }
     ]
