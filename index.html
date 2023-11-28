@@ -67,9 +67,17 @@
 		</section>
 		<section class="card">
 			<h3>Information 👇</h3>
-			<div class="weather">
-				<img src="" alt="" id="weather-icon">
-				<span id="current-temp"></span> &nbsp; - &nbsp;<span id="desc"></span>
+			<div class="weather" id="weather">
+				<div class="location-div">
+					<span class="location"></span> -
+					<span id="country"></span>
+				</div>
+				<span id="current-temp"></span>
+				<figure>
+					<img loading="lazy" src="" alt="weather" id="weather-icon">
+					<figcaption></figcaption>
+				</figure>
+				<div class="count">Page Visits: <span id="visitCount"></span></div>
 			</div>
 		</section>
 		<div class="card map">
@@ -82,8 +90,8 @@
 		<p>&nbsp; 2023 Randalf Ehigiator Nigeria</p>
 		<p id="lastModified"></p>
 	</footer>
-	<script src="scripts/weather.js"></script>
 	<script src="scripts/app.js"></script>
+	<script src="scripts/weather.js"></script>
 	<script src="scripts/links.js"></script>
 </body>
 

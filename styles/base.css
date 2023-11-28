@@ -153,8 +153,13 @@ iframe {
 
 .weather {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+figure {
+  text-align: center;
 }
 
 #current-temp, #desc {
