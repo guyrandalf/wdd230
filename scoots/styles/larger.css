@@ -1,0 +1,17 @@
+@media (min-width: 1025px) {
+  .cards div:hover {
+    margin-left: 320px;
+    transition: 0.5s;
+  }
+
+  #bg {
+    height: 500px;
+  }
+
+  #thanks {
+    text-align: center;
+    font-size: 10rem;
+    padding-top: 40px;
+    margin: 0;
+  }
+}

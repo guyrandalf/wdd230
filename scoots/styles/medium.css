@@ -1,0 +1,105 @@
+@media (min-width: 600px) and (max-width: 1020px) {
+  .hide,
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li a {
+    border-top: none;
+  }
+
+  #dropdownbutton {
+    display: none;
+  }
+
+  section div img {
+    height: 176px;
+  }
+
+  .cards div:hover {
+    margin-left: 100px;
+    transition: 0.5s;
+  }
+  .cards div h3 {
+    position: relative;
+    top: 143px;
+    left: 200px;
+    font-size: 2rem;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  .cards #jeeps {
+    margin-bottom: 80px;
+  }
+  .cards #atv {
+    margin-top: -70px;
+    margin-bottom: 0px;
+  }
+  .cards #scooters {
+    margin-bottom: 0px;
+  }
+  .cards div {
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    height: 176px;
+    margin-left: 5px;
+    width: 95%;
+  }
+
+  .arrow {
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 88px solid transparent;
+    border-bottom: 88px solid transparent;
+    border-left: 170px solid #009b72;
+  }
+
+  #bg {
+    height: 400px;
+  }
+
+  /*--------THANKS---------*/
+  #thanks {
+    text-align: center;
+    font-size: 6rem;
+    padding-top: 40px;
+    margin: 0;
+  }
+
+  fieldset input {
+    margin-bottom: 10px;
+    width: 30%;
+  }
+
+  fieldset textarea {
+    max-width: 40%;
+  }
+
+  /*--------WEATHER----------*/
+  .forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: limegreen;
+    padding-bottom: 15px;
+  }
+  .forecast h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .forecast img {
+    margin: 0px;
+  }
+  .forecast section {
+    display: flex;
+    flex-direction: column;
+  }
+  .forecast section span {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.4rem;
+  }
+}

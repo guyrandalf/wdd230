@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+:root {
+  --primary-color: #dc143c;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+header h1 {
+  line-height: 0;
+  font-size: 3rem;
+}
+
+header h2 {
+  font-size: 1.1rem;
+}
+
+nav {
+  background-color: #009b72;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav button {
+  display: block;
+  margin: 0;
+  background-color: transparent;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 6px;
+  border: none;
+  width: 100%;
+  color: black;
+}
+
+#dropdownbutton:hover {
+  background-color: #bbb;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 6px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  color: black;
+}
+
+nav ul li a:hover {
+  background-color: #bbb;
+}
+
+nav ul .active {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  padding: 0px 20px 20px 20px;
+}
+
+section div img {
+  max-width: 95%;
+}
+
+.arrow {
+  display: none;
+}
+
+.cards #jeeps {
+  margin-bottom: -30px;
+}
+.cards #atv {
+  margin-top: -75px;
+  margin-bottom: -80px;
+}
+.cards #scooters {
+  margin-bottom: -80px;
+}
+.cards div {
+  margin-top: 0px;
+}
+.cards div h3 {
+  position: relative;
+  top: 120px;
+  left: 15%;
+  font-size: 2rem;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.cards div img {
+  margin: 0;
+  padding: 0;
+  box-shadow: 6px 6px 8px #000;
+}
+
+article {
+  padding-bottom: 10px;
+}
+
+/*---------------------FOOTER----------------------------*/
+footer {
+  text-align: center;
+  padding: 5px;
+}
+
+/*-----NAV MENU ------*/
+
+/*--------THANKS---------*/
+#thanks {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 40px;
+  margin: 0;
+}
+
+/*-----------TABLE--------------*/
+table {
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 5%;
+  margin-bottom: 15px;
+}
+
+td {
+  padding: 0.3rem;
+  border: 1px solid black;
+}
+
+iframe {
+  margin: 0px 50% 0px 10px;
+}
+
+/*---------------FORM----------*/
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset input {
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+fieldset textarea {
+  max-width: 100%;
+  height: 100px;
+}
+
+form button {
+  font-size: 1.5rem;
+  padding: 10px 10px 6px 8px;
+  margin: 20px;
+}
+
+/*--------WEATHER----------*/
+.forecast {
+  display: none;
+}
+
+h4 {
+  font-size: 1.4rem;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
