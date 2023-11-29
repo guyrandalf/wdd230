@@ -2,7 +2,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
 
 :root {
-  --bg-color: #dc143c;
+  --bg-color: #1a1a1a;
   --mt: 40px;
   --mb: 20px;
 }
@@ -123,7 +123,7 @@ main {
 }
 
 .bottom nav ul li:hover {
-  background-color: #ab031c;
+  background-color: #000000;
 }
 
 .bottom nav ul li:last-child {
@@ -142,12 +142,12 @@ main {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
-  color: #44097a;
+  color: #1a1a1a;
 }
 
 .bottom nav ul li:last-child:hover,
 .bottom nav ul li:last-child a:hover {
-  background-color: #ab031c;
+  background-color: #000000;
   color: #fff;
 }
 
@@ -182,7 +182,7 @@ main {
 .cta1 a {
   text-decoration: none;
   color: #fff;
-  background-color: #dc143c;
+  background-color: #1a1a1a;
   border-radius: 2px;
   padding: 10px;
   font-size: 10px;
@@ -342,7 +342,7 @@ main {
   align-items: center;
   position: absolute;
   background-color: #fff;
-  color: #dc143c;
+  color: #1a1a1a;
   font-weight: 600;
   font-size: 18px;
   top: 0;
@@ -474,7 +474,7 @@ button {
   justify-content: center;
 }
 .cardslist section {
-  color: #dc143c;
+  color: #1a1a1a;
   padding: 30px;
   text-align: center;
 }
@@ -644,11 +644,7 @@ header .current-date {
 }
 
 .days li.inactive {
-  color: #aaa;
-}
-
-.days li.active {
-  color: #fff;
+  color: #1a1a1a;
 }
 
 .days li::before {
@@ -664,7 +660,7 @@ header .current-date {
 }
 
 .days li.active::before {
-  background: #9b59b6;
+  background: #1a1a1a;
 }
 
 .days li:not(.active):hover::before {
@@ -675,6 +671,24 @@ header .current-date {
   text-align: center;
   padding: 20px;
   line-height: 1.5;
+}
+
+.content {
+  padding: 10px;
+}
+
+.content .image {
+  box-shadow: 0px 0px 10px #efefef;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.content .image .caption {  
+  min-width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
 
 @media (min-width: 700px) {

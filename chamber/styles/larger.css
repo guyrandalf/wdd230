@@ -43,7 +43,7 @@
   .top nav ul li:last-child a {
     text-decoration: none;
     background-color: #fff;
-    color: #dc143c;
+    color: #1a1a1a;
     padding: 5px 15px;
     border-radius: 2px;
   }
@@ -164,19 +164,15 @@
   }
 
   .discover {
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 1fr 3fr;
   }
 
   .sidebar {
-    grid-area: 1;
-  }
-
-  .content {
-    grid-area: span 2/4;
+    width: 600px;
   }
 
   .sidebar .card {
-    min-width: 100%;
+    width: 100%;
   }
 
   .sidebar .card:nth-child(2) .calendar .days,
@@ -184,7 +180,26 @@
     gap: 10px;
   }
 
+  .content {
+    grid-area: span 3/4;
+  }
+
+  .content .image {
+    width: 700px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
   .content .image img {
-    min-width: 100%;
+    width: 100%;
+    height: 500px;
+  }
+
+  /* Hover effect */
+  .content .image img:hover {
+    transform: scale(1, 1.1);
+    transition: transform 0.8s;
+    transform-origin: 10% 0%;
+    opacity: .8;
   }
 }
