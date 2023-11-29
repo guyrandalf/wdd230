@@ -19,12 +19,20 @@ document.getElementById(
   "lastModified"
 ).textContent = `Last Updated ${currentdate}`;
 
-let visitCountElement = document.getElementById("visitCount");
+if (typeof Storage !== "undefined") {
+  let visitCount = localStorage.getItem("visitCount");
+  let countDisplay = document.querySelector('#visitCount')
 
-if (localStorage.getItem("pageVisits")) {
-  let count = parseInt(localStorage.getItem("pageVisits"));
-  visitCountElement.textContent = count;
+  if (visitCount) {
+    visitCount = parseInt(visitCount) + 1;
+  } else {
+    visitCount = 1;
+  }
+
+  localStorage.setItem("visitCount", visitCount)
+
+  countDisplay.textContent = visitCount
+
 } else {
-  localStorage.setItem("pageVisits", 1);
-  visitCountElement.textContent = 1;  
+  console.log("Sorry, your browser does not support local storage.");
 }
