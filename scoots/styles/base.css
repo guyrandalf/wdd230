@@ -97,7 +97,7 @@ nav a {
   left: -110px;
   width: 200px;
   margin: 0;
-  padding: 10px 0;
+  padding: 5px;
   list-style: none;
   display: none;
 }
@@ -188,12 +188,6 @@ a.active {
   text-align: center;  
 }
 
-.pageHeads {
-  text-align: center;
-  margin: 0px;
-  padding: 20px;
-}
-
 footer {
   background-color: #141414;
   color: white;
@@ -212,46 +206,31 @@ footer {
   text-decoration: none;
 }
 
-.responsive {
-  z-index: 9;
+.rental-info {
+  padding: 10px;
 }
 
-.responsive li {
-  display: block;
-}
-
-.rentalSection {
+.contact h1, .reservations h1, .rental-info h1, .table h1 {
+  font-size: 1.4rem;  
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.rentalSection h3 {
-  padding-top: 50px;
-}
-
-.servicesDiv {
-  border: 1px solid #8b0e0e;
-  width: 100%;
-  display: inline-block;
-  text-align: left;
-  margin: 5px;
-}
-
-.servicesDiv p {
-  padding-left: 5px;
-  padding-right: 5px;
+.rental-info ul {
+  list-style: "❕ ";
+  line-height: 1.4;
 }
 
 table {
-  display: inline-block;
   text-align: left;
-  border-collapse: collapse;
-  margin: 20px;
+  border-collapse: collapse;  
 }
 
 table,
 th,
 td {
-  border: 1px solid #8b0e0e;
+  border: 1px solid var(--eggplant);
 }
 
 th,
@@ -261,58 +240,50 @@ td {
 
 form {
   padding: 20px;
-  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
-form fieldset {
-  margin: 2rem 0;
-  border: 1px solid #8b0e0e;
-  padding: 0.5rem 2%;
+form fieldset {  
+  border: 1px solid var(--grape);
+  border-radius: 5px;
 }
 
-form legend {
-  color: white;
-  margin: 1rem 1rem;
+form legend {  
+  font-weight: 600;
+  color: var(--grape);  
   padding: 0 0.5rem;
 }
 
-form label.top,
 form div {
-  display: block;
-  padding-top: 1rem;
-  color: white;
-  font-size: 1rem;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 150px 1fr;  
+  align-items: center;  
 }
 
-form label.top input,
-form label.top select {
-  display: block;
-  font-size: 1rem;
-  border: solid 1px white;
-  padding: 0.75rem;
-  color: white;
-  width: 100%;
-  max-width: 20rem;
-  background-color: rgb(0, 0, 0, 0.1);
+form label {
+  display: block;  
 }
 
-form label.sbs {
-  display: block;
-  padding: 0.75rem;
-  color: white;
-}
-
-form label.top input:required {
-  border-left: #8b0e0e solid 6px;
-}
-
-form label.top input:required:valid {
-  border-left: green solid 6px;
+form input {
+  height: 30px;
 }
 
 .agreement {
-  font-size: 0.6rem;
-  width: 60%;
+  font-size: .8rem;
+  text-align: justify;
+  list-style: decimal;
+}
+
+.thanks {
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;  
 }
 
 .locationDiv {
@@ -320,12 +291,7 @@ form label.top input:required:valid {
   padding: 10px;
 }
 
-iframe {
-  margin: 0px;
+.contact .iframe-container {
+  margin: 0;
 }
 
-.thanks {
-  text-align: center;
-  height: 900px;
-  padding-top: 50px;
-}

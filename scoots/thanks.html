@@ -2,23 +2,55 @@
 <html lang="en-US">
 
 <head>
-    <meta charset='utf-8'>
-    <title>Scoots</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name="description" content="Scoots Rentals Home Page">
+    <meta charset="utf-8">
+    <title>Thank you - Scoots Rentals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Explore Cozumel's beauty effortlessly with our scooter rentals. Cruise through the vibrant streets and discover hidden gems on your terms. Enjoy the freedom to navigate this paradise island with ease and style. Rent a scooter today and make the most of your Cozumel adventure!">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/small.css" rel="stylesheet">
-    <link href="css/medium.css" rel="stylesheet">
-    <link href="css/large.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
-    <script src="js/rentals.js"></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
 </head>
+
 <body>
-    <main class="thanks">
-        <h1>Thank You!</h1> <br><br>
-        <h3>Please follow the link to send your desposit. Look for a confirmation email.</h3> <br>
-        <button class="button">Deposit</button>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                Scoots Rentals.
+            </a>
+        </div>
+        <nav>
+            <a class="ham" href="#">&#9776; Menu</a>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="thanks">
+            <h1>Thank You!</h1>
+            <h3>Your details have been sent.</h3>            
+        </section>
     </main>
+    <footer>
+        &copy; Scoots 2023 | Cozumel, Mexico | <a href="https://openweathermap.org/" class="link">openweathermap.org</a>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img class="social-icon" src="images/facebook.png"
+                    alt="facebook icon"></a>
+            <a href="https://www.instagram.com/"><img class="social-icon" src="images/instagram.png"
+                    alt="instagram icon"></a>
+            <a href="https://www.twitter.com/"><img class="social-icon" src="images/twitter.png" alt="twitter icon"></a>
+            <a href="https://www.youtube.com/"><img class="social-icon" src="images/youtube.png" alt="youtube icon"></a>
+        </div>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src='scripts/rentals.js'></script>
 </body>
+
 </html>
