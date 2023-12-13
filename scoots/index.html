@@ -1,112 +1,112 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8">
+    <title>Scoots Rentals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Scoots Rentals Home Page">
-    <title>Scoots Rentals Home</title>
+    <meta name="description" content="Explore Cozumel's beauty effortlessly with our scooter rentals. Cruise through the vibrant streets and discover hidden gems on your terms. Enjoy the freedom to navigate this paradise island with ease and style. Rent a scooter today and make the most of your Cozumel adventure!">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Scoots Rentals</h1>
-        <h2>Your Vacation Vehicle Headquarters</h2>
-
+        <div class="logo">
+            <a href="index.html">
+                Scoots Rentals.
+            </a>
+        </div>
         <nav>
-            <button id="dropdownbutton" type="button" class="small menu" onclick="toggleMenu()">
-                &#9776; Menu
-            </button>
-            <ul id="dropdown" class="">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="pages/tours.html">Tours</a></li>
-                <li><a href="pages/reservations.html">Reservations</a></li>
-                <li><a href="pages/rentals.html">Rentals</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
+            <a class="ham" href="#">&#9776; Menu</a>
+            <ul class="menu">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-
-        <section class="cards">
-            <h3 class="ban">Reserve your ride today!</h3>
-            <a href="pages/rentals.html">
-                <div id="atv">
-                    <h3>ATVs</h3>
-                    <span class="arrow"></span>
-                    <img src="images/atv.webp" alt="ATV on a sand dune">
-                </div>
-            </a>
-            <a href="pages/rentals.html">
-                <div id="scooters">
-                    <h3>Scooters</h3>
-
-                    <span class="arrow"></span>
-
-                    <img src="images/scooter.webp" alt="Scooters on a road">
-                </div>
-            </a>
-            <a href="pages/rentals.html">
-                <div id="jeeps">
-                    <h3>Jeeps</h3>
-
-                    <span class="arrow"></span>
-
-                    <img src="images/jeep.webp" alt="Jeep on a trail">
-                </div>
-            </a>
+        <section class="hero">
+            <h1>WELCOME</h1>
+            <h2>Scooter Rentals on Cozumel</h2>
         </section>
-        <h3 class="ban">WEATHER</h3>
-        <div id="tile1">
-            <h4>Weather Summary</h4>
-            <ul>
-                <li>Temp: <span id="current-temp"></span> &#176;F</li>
-                <li>Humidity: <span id="humid"></span>%</li>
-                <li>Wind Speed: <span id="wind"></span></li>
-                <li>Currently: <span id="desc"></span></li>
-            </ul>
-        </div>
+        <section class="info">
+            <h1>Our Rentals</h1>
+            <div class="card">
+                <img src="images/austin-neill.jpg" alt="jeep image">
+                <div class="card-content">
+                    <h2>JEEPS</h2>
+                    <p>Wrangler with A/C </p>
+                    <p>5 Persons Max.</p>
+                    <hr>
+                    <p>Wrangler </p>
+                    <p>4 Persons Max.</p>
+                    <a href="reservations.html" class="button">MAKE A RESERVATION</a>
+                    <p>Walk-In rental also available</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/anastasiia-tarasova.jpg" alt="motor scooter">
+                <div class="card-content">
+                    <h2>HONDA</h2>
+                    <p>Metro Scooter</p>
+                    <p>1 Person Max.</p>
+                    <hr>
+                    <p>Dio Scooter</p>
+                    <p>2 Persons Max.</p>
+                    <hr>
+                    <p>PCX150 Scooter </p>
+                    <p>2 Persons Max.</p>
+                    <a href="reservations.html" class="button">MAKE A RESERVATION</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/roberto-nickson.jpg" alt="ATV image">
+                <div class="card-content">
+                    <h2>HONDA</h2>
+                    <p>Pioneer ATV </p>
+                    <p>4 Persons Max.</p>
+                    <a href="reservations.html" class="button">MAKE A RESERVATION</a>
+                </div>
+            </div>
+        </section>
+        <section class="weather">
+            <div class="card">
+                <h4>Weather Today</h4>
+                <p>Temp: <span id="currentTemp"></span></p>
+                <p>Condition: <span id="condition"></span></p>
+                <img src="" alt="" id="weatherIconA">
+                <p>Humidity: <span id="humidity"></span></p>
+            </div>
 
-        <h4>5 Day Forecast</h4>
-
-        <div class="forecast">
-
-        </div>
-        <article id="about">
-            <h3 class="ban">About Us</h3>
-            <p>Who are we? Well, we're Scoots Rentals! We're the coolest, nicest, fastest, cheapest option out there for
-                those who are
-                looking for the perfect vehicle for their trip. We cater to businesses, tour groups, cruise lines, and
-                individual tourists. Want to
-                contact our business office? Sent us a message on the Contact Us page! Looking for fun for your self or
-                a small group of friends? Well,
-                we can help with that too. Check out our selection of vehicles and let us know what you like!
-            </p>
-            <h3 class="ban"><a href="pages/contact.html">Need Directions?</a></h3>
-        </article>
+            <div class="card">
+                <h4>Weather Tomorrow (15:00)</h4>
+                <p>Temp: <span id="forecastTemp"></span></p>
+                <p>Condition: <span id="forecastCondition"></span></p>
+                <img src="" alt="" id="weatherIconB">
+                <p>Humidity: <span id="forecastHumidity"></span></p>
+            </div>
+        </section>
     </main>
-
     <footer>
-        <p>Contact Us: 192 (8) 123-4567 | info@scoots.com</p>
-        <span>
-            <a href="facebook.com"><img src="images/fb.webp" alt="Facebook link"></a>
-            <a href="instagram.com"><img src="images/ig.webp" alt="Instagram link"></a>
-            <a href="youtube.com"><img src="images/yt.webp" alt="Youtube link"></a>
-
-        </span>
-
-        <p id="datetime"></p>
-        <p>&copy; 2020 - Randalf Ehigiator | WDD 230 | <a href="resources.html">Resources</a></p>
-        <p id="p2">Last Updated: <span id="timedisp"></span></p>
-
+        &copy; Scoots 2023 | Cozumel, Mexico | <a href="https://openweathermap.org/" class="link">openweathermap.org</a>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img class="social-icon" src="images/facebook.png"
+                    alt="facebook icon"></a>
+            <a href="https://www.instagram.com/"><img class="social-icon" src="images/instagram.png"
+                    alt="instagram icon"></a>
+            <a href="https://www.twitter.com/"><img class="social-icon" src="images/twitter.png" alt="twitter icon"></a>
+            <a href="https://www.youtube.com/"><img class="social-icon" src="images/youtube.png" alt="youtube icon"></a>
+        </div>
     </footer>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/app.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
-
 
 </html>

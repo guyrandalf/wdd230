@@ -1,191 +1,331 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 :root {
-  --primary-color: #dc143c;
+  --grape: #94618e;
+  --eggplant: #49274a;
+  --sand: #f4decb;
+  --shell: #f8eee7;
 }
 
-*,
-html {
+body {
+  font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Ubuntu", sans-serif;
-}
-
-header {
-  text-align: center;
-  color: var(--primary-color);
-}
-
-header h1 {
-  line-height: 0;
-  font-size: 3rem;
-}
-
-header h2 {
-  font-size: 1.1rem;
-}
-
-nav {
-  background-color: #009b72;
-  margin: 0 auto;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  list-style-type: none;
+h1 {
+  font-size: 4em;
   margin: 0;
-  padding: 0;
 }
 
-nav button {
-  display: block;
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1em;
+
   margin: 0;
-  background-color: transparent;
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 6px;
+}
+
+p {
+  font-family: "Helvetica", sans-serif;
+}
+
+.button {
+  background-color: var(--shell);
   border: none;
-  width: 100%;
-  color: black;
-}
-
-#dropdownbutton:hover {
-  background-color: #bbb;
-}
-
-nav ul li a {
-  display: block;
+  font-weight: 600;
+  color: var(--eggplant);
+  padding: 10px;
+  border-radius: 5px;
   text-align: center;
   text-decoration: none;
-  font-size: 1.6rem;
-  padding: 6px;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  color: black;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-nav ul li a:hover {
-  background-color: #bbb;
+.button:hover {
+  background-color: var(--grape);
+  color: var(--shell);
 }
 
-nav ul .active {
-  text-decoration: underline;
-}
-
-.hide {
-  display: none;
+.card {
+  border-radius: 10px;
+  border-bottom: 5px solid var(--sand);
 }
 
 main {
-  padding: 0px 20px 20px 20px;
+  /* width: 100%; */
 }
 
-section div img {
-  max-width: 95%;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--grape);
+  padding: 0 10px;
 }
 
-.arrow {
+.logo a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 5px 0;
+  max-width: 120px;
+}
+
+nav {
+  position: relative;
+}
+
+nav a {
+  display: block;
+  padding: 1.5rem 0.75rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.menu {
+  position: absolute;
+  background-color: var(--grape);
+  left: -110px;
+  width: 200px;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
   display: none;
 }
 
-.cards #jeeps {
-  margin-bottom: -30px;
+.menu li {
+  width: 100%;
 }
-.cards #atv {
-  margin-top: -75px;
-  margin-bottom: -80px;
-}
-.cards #scooters {
-  margin-bottom: -80px;
-}
-.cards div {
-  margin-top: 0px;
-}
-.cards div h3 {
-  position: relative;
-  top: 120px;
-  left: 15%;
-  font-size: 2rem;
+
+.menu a {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-.cards div img {
-  margin: 0;
-  padding: 0;
-  box-shadow: 6px 6px 8px #000;
+  font-weight: 700;
 }
 
-article {
-  padding-bottom: 10px;
+.menu a:hover,
+a.active {
+  color: var(--grape);
+  background-color: white;  
 }
 
-/*---------------------FOOTER----------------------------*/
-footer {
-  text-align: center;
-  padding: 5px;
-}
-
-/*-----NAV MENU ------*/
-
-/*--------THANKS---------*/
-#thanks {
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 40px;
-  margin: 0;
-}
-
-/*-----------TABLE--------------*/
-table {
-  text-align: center;
-  border-collapse: collapse;
-  margin: 0 5%;
-  margin-bottom: 15px;
-}
-
-td {
-  padding: 0.3rem;
-  border: 1px solid black;
-}
-
-iframe {
-  margin: 0px 50% 0px 10px;
-}
-
-/*---------------FORM----------*/
-fieldset {
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)),
+    url("../images/caleb-george-landscape.jpg");
+  background-position: bottom center;
+  color: var(--shell);
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  margin: 0 auto;
+  height: 100vh;
 }
 
-fieldset input {
-  margin-bottom: 10px;
-  max-width: 100%;
+.hero h2 {
+  font-size: 1.3rem;
 }
 
-fieldset textarea {
-  max-width: 100%;
-  height: 100px;
+.info {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  padding: 10px;
+  gap: 50px;
 }
 
-form button {
-  font-size: 1.5rem;
-  padding: 10px 10px 6px 8px;
+.info h1 {
+  margin: 50px 0 20px 0;
+  font-size: 30px;
+}
+
+.info .card {
+  background-color: var(--eggplant);
+  margin: 0 20px;
+  text-align: center;  
+  border-radius: 10px;
+}
+
+.info .card img {
+  width: 100%;
+}
+
+.card-content {
+  color: var(--sand);
+  padding: 20px 0;
+}
+
+.card-content hr {
+  width: 200px;
+  color: var(--sand);
+}
+
+.weather {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.weather .card {
+  background-color: var(--grape);
+  padding: 20px;
+  margin: 30px;
+  width: 50%;
+  font-size: 1em;
+  text-align: center;  
+}
+
+.pageHeads {
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+}
+
+footer {
+  background-color: #141414;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icon {
+  height: 40px;
+  padding: 5px;
+  margin: 0px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.responsive {
+  z-index: 9;
+}
+
+.responsive li {
+  display: block;
+}
+
+.rentalSection {
+  text-align: center;
+}
+
+.rentalSection h3 {
+  padding-top: 50px;
+}
+
+.servicesDiv {
+  border: 1px solid #8b0e0e;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  margin: 5px;
+}
+
+.servicesDiv p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+table {
+  display: inline-block;
+  text-align: left;
+  border-collapse: collapse;
   margin: 20px;
 }
 
-/*--------WEATHER----------*/
-.forecast {
-  display: none;
+table,
+th,
+td {
+  border: 1px solid #8b0e0e;
 }
 
-h4 {
-  font-size: 1.4rem;
-  padding-left: 20px;
-  margin-bottom: 5px;
+th,
+td {
+  padding: 5px;
+}
+
+form {
+  padding: 20px;
+  margin: auto;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #8b0e0e;
+  padding: 0.5rem 2%;
+}
+
+form legend {
+  color: white;
+  margin: 1rem 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+form label.top input,
+form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px white;
+  padding: 0.75rem;
+  color: white;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem;
+  color: white;
+}
+
+form label.top input:required {
+  border-left: #8b0e0e solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+.agreement {
+  font-size: 0.6rem;
+  width: 60%;
+}
+
+.locationDiv {
+  text-align: center;
+  padding: 10px;
+}
+
+iframe {
+  margin: 0px;
+}
+
+.thanks {
+  text-align: center;
+  height: 900px;
+  padding-top: 50px;
 }
