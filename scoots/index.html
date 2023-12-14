@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <title>Scoots Rentals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Explore Cozumel's beauty effortlessly with our scooter rentals. Cruise through the vibrant streets and discover hidden gems on your terms. Enjoy the freedom to navigate this paradise island with ease and style. Rent a scooter today and make the most of your Cozumel adventure!">
+    <meta name="description"
+        content="Explore Cozumel's beauty effortlessly with our scooter rentals. Cruise through the vibrant streets and discover hidden gems on your terms. Enjoy the freedom to navigate this paradise island with ease and style. Rent a scooter today and make the most of your Cozumel adventure!">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link href="styles/base.css" rel="stylesheet">
@@ -25,8 +26,7 @@
             <ul class="menu">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="tours.html">Tours</a></li>
+                <li><a href="reservations.html">Reservations</a></li>      
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -39,7 +39,7 @@
         <section class="info">
             <h1>Our Rentals</h1>
             <div class="card">
-                <img src="images/austin-neill.jpg" alt="jeep image">
+                <img loading="lazy" src="images/austin-neill.jpg" alt="jeep image">
                 <div class="card-content">
                     <h2>JEEPS</h2>
                     <p>Wrangler with A/C </p>
@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/anastasiia-tarasova.jpg" alt="motor scooter">
+                <img loading="lazy" src="images/anastasiia-tarasova.jpg" alt="motor scooter">
                 <div class="card-content">
                     <h2>HONDA</h2>
                     <p>Metro Scooter</p>
@@ -64,32 +64,34 @@
                     <p>PCX150 Scooter </p>
                     <p>2 Persons Max.</p>
                     <a href="reservations.html" class="button">MAKE A RESERVATION</a>
+                    <p>Walk-In rental also available</p>
                 </div>
             </div>
             <div class="card">
-                <img src="images/roberto-nickson.jpg" alt="ATV image">
+                <img loading="lazy" src="images/roberto-nickson.jpg" alt="ATV image">
                 <div class="card-content">
                     <h2>HONDA</h2>
                     <p>Pioneer ATV </p>
                     <p>4 Persons Max.</p>
                     <a href="reservations.html" class="button">MAKE A RESERVATION</a>
+                    <p>Walk-In rental also available</p>
                 </div>
             </div>
         </section>
         <section class="weather">
             <div class="card">
-                <h4>Weather Today</h4>
+                <h2>Weather Today</h2>
                 <p>Temp: <span id="currentTemp"></span></p>
                 <p>Condition: <span id="condition"></span></p>
-                <img src="" alt="" id="weatherIconA">
+                <img loading="lazy" src="" alt="" id="weatherIconA">
                 <p>Humidity: <span id="humidity"></span></p>
             </div>
 
             <div class="card">
-                <h4>Weather Tomorrow (15:00)</h4>
+                <h2>Weather Tomorrow (15:00)</h2>
                 <p>Temp: <span id="forecastTemp"></span></p>
                 <p>Condition: <span id="forecastCondition"></span></p>
-                <img src="" alt="" id="weatherIconB">
+                <img loading="lazy" src="" alt="" id="weatherIconB">
                 <p>Humidity: <span id="forecastHumidity"></span></p>
             </div>
         </section>
@@ -97,12 +99,10 @@
     <footer>
         &copy; Scoots 2023 | Cozumel, Mexico | <a href="https://openweathermap.org/" class="link">openweathermap.org</a>
         <div class="social">
-            <a href="https://www.facebook.com/"><img class="social-icon" src="images/facebook.png"
+            <a href="https://www.facebook.com/"><img loading="lazy" class="social-icon" src="images/facebook.png"
                     alt="facebook icon"></a>
-            <a href="https://www.instagram.com/"><img class="social-icon" src="images/instagram.png"
+            <a href="https://www.instagram.com/"><img loading="lazy" class="social-icon" src="images/instagram.png"
                     alt="instagram icon"></a>
-            <a href="https://www.twitter.com/"><img class="social-icon" src="images/twitter.png" alt="twitter icon"></a>
-            <a href="https://www.youtube.com/"><img class="social-icon" src="images/youtube.png" alt="youtube icon"></a>
         </div>
     </footer>
     <script src="scripts/forecast.js"></script>

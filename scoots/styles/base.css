@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 :root {
-  --grape: #94618e;
-  --eggplant: #49274a;
-  --sand: #f4decb;
-  --shell: #f8eee7;
+  --text: #112A46;
+  --background: #ACC8E5;
+  --white: #ffffff;
+}
+
+html {
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
@@ -29,15 +32,11 @@ h3 {
   margin: 0;
 }
 
-p {
-  font-family: "Helvetica", sans-serif;
-}
-
 .button {
-  background-color: var(--shell);
+  background-color: var(--text);
   border: none;
   font-weight: 600;
-  color: var(--eggplant);
+  color: var(--white);
   padding: 10px;
   border-radius: 5px;
   text-align: center;
@@ -48,24 +47,20 @@ p {
 }
 
 .button:hover {
-  background-color: var(--grape);
-  color: var(--shell);
+  background-color: var(--white);
+  color: var(--text);
 }
 
 .card {
   border-radius: 10px;
-  border-bottom: 5px solid var(--sand);
-}
-
-main {
-  /* width: 100%; */
+  border-bottom: 5px solid var(--text);
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--grape);
+  background-color: var(--background);
   padding: 0 10px;
 }
 
@@ -74,7 +69,7 @@ header {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--text);
   padding: 5px 0;
   max-width: 120px;
 }
@@ -87,19 +82,20 @@ nav a {
   display: block;
   padding: 1.5rem 0.75rem;
   text-decoration: none;
-  color: white;
+  color: var(--text);
   font-weight: 700;
 }
 
 .menu {
   position: absolute;
-  background-color: var(--grape);
-  left: -110px;
+  background-color: var(--text);
+  left: -120px;
   width: 200px;
   margin: 0;
   padding: 5px;
   list-style: none;
   display: none;
+  transition: ease-in .5s;
 }
 
 .menu li {
@@ -110,21 +106,22 @@ nav a {
   display: block;
   padding: 0.75rem;
   text-decoration: none;
-  color: white;
+  color: var(--white);
   font-weight: 700;
 }
 
 .menu a:hover,
 a.active {
-  color: var(--grape);
-  background-color: white;  
+  color: var(--text);
+  background-color: var(--white);
 }
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)),
     url("../images/caleb-george-landscape.jpg");
   background-position: bottom center;
-  color: var(--shell);
+  color: var(--text);
+  text-shadow: 1px 1px 1px var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,46 +148,49 @@ a.active {
   font-size: 30px;
 }
 
-.info .card {
-  background-color: var(--eggplant);
+.info .card {  
+  border: 1px solid var(--background);
   margin: 0 20px;
-  text-align: center;  
+  text-align: center;
   border-radius: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .info .card img {
   width: 100%;
 }
 
-.card-content {
-  color: var(--sand);
+.card-content {  
   padding: 20px 0;
+}
+.card-content p {
+  line-height: 1.5px;
 }
 
 .card-content hr {
   width: 200px;
-  color: var(--sand);
+  color: var(--text);
 }
 
 .weather {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;  
+  align-items: center;
 }
 
 .weather .card {
-  background-color: var(--grape);
+  border: 1px solid var(--background);
   padding: 20px;
   margin: 30px;
-  width: 50%;
-  font-size: 1em;
-  text-align: center;  
+  width: 300px;
+  text-align: center;
 }
 
 footer {
-  background-color: #141414;
-  color: white;
+  background-color: var(--text);
+  color: var(--white);
   padding: 20px;
   text-align: center;
 }
@@ -202,35 +202,37 @@ footer {
 }
 
 .link {
-  color: white;
-  text-decoration: none;
+  color: var(--background);  
 }
 
 .rental-info {
   padding: 10px;
 }
 
-.contact h1, .reservations h1, .rental-info h1, .table h1 {
-  font-size: 1.4rem;  
+.contact h1,
+.reservations h1,
+.rental-info h1,
+.table h1 {
+  font-size: 1.4rem;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
 .rental-info ul {
-  list-style: "❕ ";
-  line-height: 1.4;
+  list-style: "✅ ";
+  line-height: 1.4;  
 }
 
 table {
   text-align: left;
-  border-collapse: collapse;  
+  border-collapse: collapse;
 }
 
 table,
 th,
 td {
-  border: 1px solid var(--eggplant);
+  border: 1px solid var(--background);
 }
 
 th,
@@ -245,26 +247,26 @@ form {
   gap: 20px;
 }
 
-form fieldset {  
-  border: 1px solid var(--grape);
+form fieldset {
+  border: 1px solid var(--text);
   border-radius: 5px;
 }
 
-form legend {  
+form legend {
   font-weight: 600;
-  color: var(--grape);  
+  color: var(--text);
   padding: 0 0.5rem;
 }
 
 form div {
   margin-top: 10px;
   display: grid;
-  grid-template-columns: 150px 1fr;  
-  align-items: center;  
+  grid-template-columns: 150px 1fr;
+  align-items: center;
 }
 
 form label {
-  display: block;  
+  display: block;
 }
 
 form input {
@@ -272,7 +274,7 @@ form input {
 }
 
 .agreement {
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: justify;
   list-style: decimal;
 }
@@ -283,15 +285,9 @@ form input {
   display: flex;
   justify-content: center;
   padding: 20px;
-  flex-direction: column;  
-}
-
-.locationDiv {
-  text-align: center;
-  padding: 10px;
+  flex-direction: column;
 }
 
 .contact .iframe-container {
   margin: 0;
 }
-
