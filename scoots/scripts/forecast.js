@@ -35,10 +35,30 @@ fetch(url)
       "forecastHumidity"
     ).textContent = `${forecastHumidity}%`;
 
-    const iconUrlA = `http://openweathermap.org/img/wn/${currentIcon}.webp`;
-    const iconUrlB = `http://openweathermap.org/img/wn/${forecastIcon}.webp`;
+    const iconUrlA = `http://openweathermap.org/img/wn/${currentIcon}.png`;
+    const iconUrlB = `http://openweathermap.org/img/wn/${forecastIcon}.png`;
     document.getElementById("weatherIconA").src = iconUrlA;
     document.getElementById("weatherIconB").src = iconUrlB;
+
+    const meetingField = document.querySelector(".weather-notice");
+  
+  const message = document.createElement("p");
+  message.textContent =
+    `Highest temperature for today is: ${data.list[0].main.temp_max}°C`;
+
+    const closeButton = document.createElement("span");
+    closeButton.classList.add("close-btn");
+    closeButton.textContent = "❌ Close";
+    closeButton.setAttribute("title", "Click to close");
+
+    meetingField.appendChild(message);
+    meetingField.appendChild(closeButton);
+
+    document.body.appendChild(meetingField);
+
+    closeButton.addEventListener("click", function () {
+      meetingField.style.display = "none";
+    });
   })
   .catch((error) => {
     console.error("There was a problem fetching the weather data:", error);
