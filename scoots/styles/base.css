@@ -125,8 +125,7 @@ nav a {
   width: 100%;
 }
 
-.menu a {
-  /* color: var(--white); */
+.menu a {  
   display: block;
   padding: 0.75rem;
   text-decoration: none;  
@@ -263,8 +262,7 @@ td {
   padding: 5px;
 }
 
-form {
-  padding: 20px;
+form {  
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
