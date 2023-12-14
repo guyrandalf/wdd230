@@ -110,7 +110,8 @@ nav a {
 
 .menu {
   position: absolute;
-  background-color: var(--text);
+  background-color: var(--white);
+  color: var(--text);
   left: -120px;
   width: 200px;
   margin: 0;
@@ -125,6 +126,7 @@ nav a {
 }
 
 .menu a {
+  /* color: var(--white); */
   display: block;
   padding: 0.75rem;
   text-decoration: none;  
@@ -133,8 +135,8 @@ nav a {
 
 .menu a:hover,
 a.active {
-  color: var(--text);
-  background-color: var(--white);
+  color: var(--white);
+  background-color: var(--text);
 }
 
 .hero {
