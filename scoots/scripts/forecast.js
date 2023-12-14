@@ -35,8 +35,8 @@ fetch(url)
       "forecastHumidity"
     ).textContent = `${forecastHumidity}%`;
 
-    const iconUrlA = `http://openweathermap.org/img/wn/${currentIcon}.png`;
-    const iconUrlB = `http://openweathermap.org/img/wn/${forecastIcon}.png`;
+    const iconUrlA = `http://openweathermap.org/img/wn/${currentIcon}.webp`;
+    const iconUrlB = `http://openweathermap.org/img/wn/${forecastIcon}.webp`;
     document.getElementById("weatherIconA").src = iconUrlA;
     document.getElementById("weatherIconB").src = iconUrlB;
   })

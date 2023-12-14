@@ -118,7 +118,7 @@ a.active {
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)),
-    url("../images/caleb-george-landscape.jpg");
+    url("../images/caleb-george-landscape.webp");
   background-position: bottom center;
   color: var(--text);
   text-shadow: 1px 1px 1px var(--white);
